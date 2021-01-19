@@ -22,8 +22,7 @@
       <!-- Percorre a lista de tarefas exibindo cada uma -->
       <ul>
         <li v-for="tarefa in tarefas" v-bind:key="tarefa">{{ tarefa }}</li>
-
-      </ul>
+      </ul>     
 </div>
 
 
@@ -36,6 +35,7 @@
 
 <script>
 export default {
+  components: { LvUsuario },
   name: 'app',
   data () {
     return {
